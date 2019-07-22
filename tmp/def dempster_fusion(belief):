@@ -1,0 +1,9 @@
+def dempster_fusion(belief):
+    top = belief00 * belief10 + belief00 * belief12 + belief02 * belief10
+    bottom = 1 - (belief00 * belief11 + belief01 * belief10)
+    detect = top / bottom
+
+    top = belief01 * belief11 + belief01 * belief12 + belief02 * belief11
+    no_detect = top / bottom
+
+    return detect / no_detect
