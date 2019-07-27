@@ -87,13 +87,15 @@ function myFunction() {
   // location.href='ftp://www.test.com/bridge.html'
   var userAgent = navigator.userAgent || navigator.vendor || window.opera;
   if (/android/i.test(userAgent)) {
-        location.href='intent://https://jimmy-katie.github.io/#Intent;scheme=http;package=com.android.chrome;end'
+        // location.href='intent://https://jimmy-katie.github.io/#Intent;scheme=http;package=com.android.chrome;end'
+       window.location.replace("https://calendar.google.com/event?action=TEMPLATE&amp;tmeid=NjE1dHVjN25qcTZobHVxaWE4M3R1cmY5bjAganV1dWRza3M1cDQydGo5cHVpa3BmY2Y5cXNAZw&amp;tmsrc=juuudsks5p42tj9puikpfcf9qs%40group.calendar.google.com"); 
     }
   else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
        window.open("ftp://ftp.umiacs.umd.edu/pub/leekh3/jimmy_redirect.html", "_self");
     }
   else{
-  window.open("https://calendar.google.com/event?action=TEMPLATE&amp;tmeid=NjE1dHVjN25qcTZobHVxaWE4M3R1cmY5bjAganV1dWRza3M1cDQydGo5cHVpa3BmY2Y5cXNAZw&amp;tmsrc=juuudsks5p42tj9puikpfcf9qs%40group.calendar.google.com", "_self");  
+  // window.open("https://calendar.google.com/event?action=TEMPLATE&amp;tmeid=NjE1dHVjN25qcTZobHVxaWE4M3R1cmY5bjAganV1dWRza3M1cDQydGo5cHVpa3BmY2Y5cXNAZw&amp;tmsrc=juuudsks5p42tj9puikpfcf9qs%40group.calendar.google.com", "_self"); 
+         window.location.replace("https://calendar.google.com/event?action=TEMPLATE&amp;tmeid=NjE1dHVjN25qcTZobHVxaWE4M3R1cmY5bjAganV1dWRza3M1cDQydGo5cHVpa3BmY2Y5cXNAZw&amp;tmsrc=juuudsks5p42tj9puikpfcf9qs%40group.calendar.google.com");  
   }
   
 }
